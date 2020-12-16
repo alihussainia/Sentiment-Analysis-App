@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 #### Boilerplate code - 1 #####
 # import Flask library
 from flask import Flask

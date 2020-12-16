@@ -15,7 +15,10 @@ RUN apt-get update
 RUN apt-get install -y python3-pip 
 RUN apt-get install -y python3-dev 
 RUN apt-get install -y build-essential
+RUN apt-get install python-virtualenv
 
+RUN virtualenv venv
+RUN . venv/bin/activate
 
 # Copy all files from current folder (.) to container's folder (.)
 COPY . .
